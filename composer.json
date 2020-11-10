@@ -1,0 +1,22 @@
+{
+  "name": "yiisoft-custom/yii2-model-attribute-convert",
+  "description": "Base on Yii2 BaseActiveRecord. Converts column from db format  to model format while SELECT,oppositely way while INSERT or UPDATE ",
+  "keywords": ["yii2 attributes converts"],
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Bob",
+      "email": "lucian@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "yiisoft/yii2": "2.0.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "ModelAttributeConverted\\": "src"
+    }
+  }
+}

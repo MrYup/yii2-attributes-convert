@@ -55,4 +55,4 @@ class Test extends ActiveRecord
 
 ```
 
-Just used like behavoir class. Property `$cast` is key-value(eg: `'order_no' => 'Array'`). `Key` is the attribute needs to be  converted,and `value` is the converter,class name or string maps a class name would be fine
+Just used like other behavior class. Property `$cast` is key-value(eg: `'order_no' => 'Array'`). `Key` is the attribute needs to be  converted,and `value` is the converter,class name or string maps a class name would be fine

@@ -128,7 +128,7 @@ class AttributeConverted extends Behavior {
         if (\Yii::$container->hasSingleton($class)){
             $converter =  \Yii::$container->get($class,$params);
         }else{
-            $converter = \Yii::createObject($class,$params);
+            $converter = \Yii::createObject($converterConf,$params);
             \Yii::$container->setSingleton($class,$converter);
         }
 

@@ -46,7 +46,8 @@ class AttributeConverted extends Behavior {
     {
         return [
             $this->owner::EVENT_AFTER_FIND => [$this,'convertModelFormat'],
-            $this->owner::EVENT_BEFORE_VALIDATE => [$this,'convertDbFormat'],
+            $this->owner::EVENT_BEFORE_INSERT => [$this,'convertDbFormat'],
+            $this->owner::EVENT_BEFORE_UPDATE => [$this,'convertDbFormat'],
             $this->owner::EVENT_AFTER_UPDATE => [$this,'convertModelFormat'],
             $this->owner::EVENT_AFTER_INSERT => [$this,'convertModelFormat'],
 
